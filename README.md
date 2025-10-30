@@ -1,2 +1,2 @@
 # Entropy-Calculator
-A simple Python tool to calculate the entropy of a file.
+A lightweight Python utility for calculating Shannon entropy of binary files, useful for identifying packed, encrypted, or compressed regions during malware analysis.
