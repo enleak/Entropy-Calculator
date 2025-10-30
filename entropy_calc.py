@@ -16,7 +16,6 @@ import math
 from collections import Counter
 
 def shannon_entropy(data: bytes) -> float:
-    """Compute Shannon entropy (bits per byte)."""
     if not data:
         return 0.0
     freq = Counter(data)
@@ -24,7 +23,6 @@ def shannon_entropy(data: bytes) -> float:
     return -sum((count/n) * math.log2(count/n) for count in freq.values())
 
 def analyze_file(path: str, chunk_size: int = None):
-    """Calculate and print file entropy (optionally per chunk)."""
     with open(path, "rb") as f:
         data = f.read()
 
